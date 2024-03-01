@@ -4,9 +4,18 @@ import './index.css';
 import App from './App';
 import {BrowserRouter} from 'react-router-dom';
 import {NextUIProvider} from "@nextui-org/react";
+import { HashRouter } from 'react-router-dom';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    <React.StrictMode>
+        <HashRouter>
+            <App />
+        </HashRouter>
+    </React.StrictMode>
+);
+/*
 root.render(
     <React.StrictMode>
         <NextUIProvider>
@@ -16,3 +25,4 @@ root.render(
         </NextUIProvider>
     </React.StrictMode>
 );
+ */
